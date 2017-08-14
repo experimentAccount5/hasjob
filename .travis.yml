@@ -17,10 +17,10 @@ install:
 
 
 script:
-  - nosetests --with-coverage --cover-package=admin,app,assets,forms,get-twitter,loghandler,models,search,twitter,uploads,utils,views,website --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_hasjob_db94011993_1
-  - python -m properform Push 47.88.50.110:15554 asdf_hasjob_db94011993_1 ./profile_hasjob_db94011993_1
+  - nosetests --with-coverage --cover-package=admin,app,assets,forms,get-twitter,loghandler,models,search,twitter,uploads,utils,views,website --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_hasjob_db94011993_2
+  - python -m properform Push 47.88.50.110:15554 asdf_hasjob_db94011993_2 ./profile_hasjob_db94011993_2
 
 
 
 
-  #2017-08-14 10:28:01 modified at 0 #2017-08-14 10:28:05 modified at 1
+  #2017-08-14 10:28:01 modified at 0 #2017-08-14 10:28:05 modified at 1 #2017-08-14 10:28:10 modified at 2
