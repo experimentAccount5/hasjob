@@ -25,12 +25,12 @@ install:
   - pip install properform
 
 script:
-  - nosetests -v tests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_hasjob_ff4ba1fdb2_1
-  - python -m properform Push 47.88.50.110:15554 asdf_hasjob_ff4ba1fdb2_1 ./profile_hasjob_ff4ba1fdb2_1
+  - nosetests -v tests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_hasjob_ff4ba1fdb2_2
+  - python -m properform Push 47.88.50.110:15554 asdf_hasjob_ff4ba1fdb2_2 ./profile_hasjob_ff4ba1fdb2_2
 
 
 addons:
   postgresql: "9.4"
 services:
   - redis-server
- #2017-08-14 08:19:36 modified at 0 #2017-08-14 08:19:40 modified at 1
+ #2017-08-14 08:19:36 modified at 0 #2017-08-14 08:19:40 modified at 1 #2017-08-14 08:19:44 modified at 2
