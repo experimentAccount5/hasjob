@@ -18,9 +18,9 @@ install:
 
 
 script: 
-  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_hasjob_3b78c55c2b_0
-  - python -m properform Push 47.88.50.110:15554 asdf_hasjob_3b78c55c2b_0 ./profile_hasjob_3b78c55c2b_0
+  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_hasjob_3b78c55c2b_1
+  - python -m properform Push 47.88.50.110:15554 asdf_hasjob_3b78c55c2b_1 ./profile_hasjob_3b78c55c2b_1
 
 
 
- #2017-08-14 08:51:27 modified at 0
+ #2017-08-14 08:51:27 modified at 0 #2017-08-14 08:51:32 modified at 1
